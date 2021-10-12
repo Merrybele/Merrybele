@@ -1,0 +1,318 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+header{
+    position: fixed;
+    height: 90px;
+    border: 1px solid gainsboro;
+    width: 100%;
+    background-color: white;
+}
+header b {
+    
+    padding: 10px 90px 0px;
+    font-size: 23px;
+    font-weight: 600;
+}
+header b a{
+    color: black;
+}
+header div.parent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header nav.first {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header nav.second{
+    display: flex;
+    margin: 0px 50px 0px 0px;
+}
+header nav.first ul{
+    list-style-type: none;
+}
+header nav.first ul li{
+    display: inline;
+    margin: 0px 20px;
+}
+header nav.first ul li a{
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+}
+header nav.first ul li a:hover{
+    text-decoration: underline;
+    color: #00b87c;
+}
+header nav.second ul{
+    list-style-type: none;
+}
+header nav.second ul li{
+    display: inline;
+    margin: 0px 20px;
+}
+header nav.second ul li a{
+    color: #00b87c;
+    font-size: 18px;
+}
+header nav.second button{
+    background-color: white;
+    border-radius: 7px;
+    height: 40px;
+    width: 70px;
+    background-color: #00b87c;
+}
+header nav.second button a{
+    color: white;
+    font-size: 15px;
+}
+header nav.second button:hover{
+    background-color: green;
+}
+section.main1{
+    display: flex;
+}
+section.main1 div.content{
+    width: 50%;
+    padding: 150px 70px;
+}
+section.main1 div.image{
+    width: 50%;
+    padding: 150px 30px;
+}
+section.main1 div.content h1{
+    margin: 25px 0px 20px;
+    font-size: 40px;
+    width: 100%;
+}
+section.main1 div.content button{
+    margin: 50px 0px;
+    height: 70px;
+    background-color: #00b87c;
+    border-radius: 10px;
+    width: 200px;
+}
+section.main1 div.content button a{
+    color: white;
+    font-size: 18px;
+}
+section.main1 div.content p{
+    font-size: 20px;
+    width: 90%;
+}
+@media only screen and (max-width: 600px){
+    section.main1 div.content{
+        flex-direction: column;
+        width: 100%;
+    }
+    section.main1 div.image{
+        display: none;
+    }
+}
+section.main2 div.content{
+    margin: 0px 50px;
+}
+section.main2 div.images{
+    flex-direction: row;
+    justify-content: space-between;
+    display: flex;
+}
+section.main2 div.image{
+    width: 25%;
+    padding: 50px;
+}
+@media only screen and (max-width: 600px){
+    section.main2 div.content{
+        flex-direction: column;
+        width: 100%;
+    }
+    section.main2 div.images{
+        flex-direction: column;
+        width: 100%;
+    }
+}
+section.main3{
+    display: flex;
+}
+section.main3 div.image{
+    width: 50%;
+    margin: 100px 50px;
+}
+section.main3 div.content{
+    width: 50%;
+    margin: 100px 90px;
+}
+section.main3 div.content p{
+    font-size: 23px;
+    width: 75%;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+section.main3 div.content a{
+    font-size: 23px;
+    color: #00b87c;
+}
+section.main3 div.content h1{
+    margin: 0px 0px 20px;
+    font-size: 40px;
+    width:100%;
+}
+section.main3 div.content a{
+    margin: 50px 0px;
+}
+@media only screen and (max-width: 600px){
+    section.main3 div.content{
+        flex-direction: column;
+        width: 100%;
+    }
+    section.main3 div.image{
+        display: none;
+    }
+}
+section.main4{
+    display: flex
+}
+section.main4 div.content{
+    width: 50%;
+    margin: 0px 50px;
+}
+section.main4 div.image{
+    width: 50%;
+    margin: 0px 50px;
+}
+section.main4 div.content p{
+    font-size: 23px;
+    width: 75%;
+    margin-bottom: 30px;
+}
+section.main4 div.content h1{
+    margin: 0px 0px 20px;
+    font-size: 40px;
+}
+section.main4 div.content a{
+    font-size: 23px;
+    color: #00b87c;
+}
+@media only screen and (max-width: 600px){
+    section.main4 div.content{
+        flex-direction: column;
+        width: 100%;
+    }
+    section.main4 div.image{
+        display: none;
+    }
+}
+section.main5 {
+    display: flex;
+}
+section.main5 div.image{
+    width: 50%;
+    margin: 100px 50px;
+}
+section.main5 div.content{
+    width: 50%;
+    margin: 100px 30px;
+}
+section.main5 div.content h1{
+    margin: 0px 0px 20px;
+    font-size: 40px;
+}
+section.main5 div.content p{
+    font-size: 23px;
+    width: 80%;
+    margin-bottom: 30px;
+}
+section.main5 div.content a{
+    font-size: 23px;
+    color: #00b87c;
+}
+@media only screen and (max-width: 600px){
+    section.main5 div.content{
+        flex-direction: column;
+        width: 100%;
+    }
+    section.main5 div.image{
+        display: none;
+    }
+}
+section.main6{
+    display: flex;
+}
+section.main6 div.content{
+    margin: 0px 70px;
+}
+section.main6 div.image{
+    margin: 0px 100px;
+}
+section.main6 div.content h1{
+    margin: 0px 0px 20px;
+    font-size: 40px;
+}
+section.main6 div.content p{
+    font-size: 23px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+section.main6 div.content a{
+    font-size: 23px;
+    color: #00b87c;
+}
+@media only screen and (max-width: 600px){
+    section.main6 div.content{
+        flex-direction: column;
+        width: 100%;
+    }
+    section.main6 div.image{
+        display: none;
+    }
+}
+section.main7 {
+    display: flex;
+    background-color: #00b87c;
+    margin: 100px 0px;
+    padding: 30px 60px 0px;
+}
+section.main7 div.content{
+    width: 50%;
+}
+section.main7 div.image{
+    width: 50%;
+}
+section.main7 div.content h1{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+section.main7 div.content button{
+    height: 70px;
+    background-color: white;
+    width: 200px;
+    margin: 50px 0px;
+    border-radius: 10px;
+}
+section.main7 div.content button a{
+    color: #00b87c;
+    font-size: 15px;
+    font-weight: 700;
+}
+section.main7 div.content button:hover{
+    background-color: #00b87c;
+    color: white !important;
+}
+section.main7 div.content button a:hover{
+    color: white;
+}
+@media only screen and (max-width: 600px){
+    section.main7 div.content{
+        flex-direction: column;
+        width: 100%;
+    }
+    section.main7 div.image{
+        display: none;
+    }
+}
